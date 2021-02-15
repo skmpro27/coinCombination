@@ -67,3 +67,5 @@ echo "THH =" ${percen[211]}"%"
 echo "TTH =" ${percen[221]}"%"
 echo "THT =" ${percen[212]}"%"
 echo "HTT =" ${percen[122]}"%"
+
+
