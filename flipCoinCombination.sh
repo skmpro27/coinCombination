@@ -38,34 +38,3 @@ echo "TT =" ${percen[22]}"%"
 echo "HT =" ${percen[12]}"%"
 echo "TH =" ${percen[21]}"%"
 
-for (( i=1; i<=20; i+=1 ))
-do
-	coin1=$(( RANDOM%2+1 ))
-	coin1=$(( coin1*100 ))
-	coin2=$(( RANDOM%2+1 ))
-	coin2=$(( coin2*10 ))
-	coin3=$(( RANDOM%2+1 ))
-	coin3=$(( coin1+coin2+coin3 ))
-	count[$coin3]=$(( ${count[$coin3]}+1 ))
-done
-
-percen[111]=$(( 5*${count[111]} ))
-percen[222]=$(( 5*${count[222]} ))
-percen[112]=$(( 5*${count[112]} ))
-percen[121]=$(( 5*${count[121]} ))
-percen[211]=$(( 5*${count[211]} ))
-percen[221]=$(( 5*${count[221]} ))
-percen[212]=$(( 5*${count[212]} ))
-percen[122]=$(( 5*${count[122]} ))
-
-echo
-echo "HHH =" ${percen[111]}"%"
-echo "TTT =" ${percen[222]}"%"
-echo "HHT =" ${percen[112]}"%"
-echo "HTH =" ${percen[121]}"%"
-echo "THH =" ${percen[211]}"%"
-echo "TTH =" ${percen[221]}"%"
-echo "THT =" ${percen[212]}"%"
-echo "HTT =" ${percen[122]}"%"
-
-
